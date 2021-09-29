@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="menu">
+        <div class="logotipo">
+          <img class="logo" src="../Assets/Logo.svg" alt="logo-empresarial" />
+        </div>
+        <div class="back_btn">
+          <a href="../index.html">
+            <img
+              class="rsp_btn"
+              src="../Assets/Back Arrow.svg"
+              alt="menu-desplegable"
+            />
+          </a>
+          <b>Back to homepage</b>
+        </div>
+      </nav>
+      <main class="main_content">
+        <section class="main_info">
+          <h1 class="title">Create your personalized feed.</h1>
+          <ul class="items">
+            <li class="item">
+              <i class="icon">🎈</i>
+              <p>
+                <strong>Over 20 resources.</strong> With resources ranging from
+                Reddit to IndieHackers, we´ve got all your needs covered.
+              </p>
+            </li>
+            <li class="item">
+              <i class="icon">🗞️</i>
+              <p>
+                <strong>Delivered weekly.</strong> Every week at exactly Tuesday
+                12:00 P.M EST - expect a value-packed digest right in your
+                email.
+              </p>
+            </li>
+            <li class="item">
+              <i class="icon">💡</i>
+              <p>
+                <strong>Unlimited Ideas.</strong> With all the ideas you´ll be
+                reading about, what´s stopping you from creating a sustainable
+                startup?
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="signup">
+          <h3 class="sign_title">Create your IndieBrew Account</h3>
+          <form action="">
+            <div class="email_field">
+              <label for="email">Email</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div class="name_field">
+              <label for="fullname">Full Name</label
+              ><input
+                id="fullname"
+                name="fullname"
+                type="text"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="pass_field">
+              <label for="pass">Password</label
+              ><input
+                id="pass"
+                name="pass"
+                type="pass"
+                placeholder="At least 8 characters"
+                minlength="8"
+                required
+              />
+            </div>
+            <div class="check_field">
+              <input type="checkbox" name="check" id="check" />
+              <label for="check"
+                >By creating an account on IndieBrew, you agree to the
+                <span class="terms">Terms & Conditions</span>.</label
+              >
+            </div>
+            <button id="btn" type="submit">Create an Account</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

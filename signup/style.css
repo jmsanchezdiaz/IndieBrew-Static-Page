@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background: radial-gradient(circle, #ffd3ff, #ffffff);
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  margin: 20px;
+}
+
+/* NAV BAR */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.625rem;
+}
+.menu .rsp_btn {
+  max-width: 100%;
+  padding: 7.5px 13px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid rgb(205, 205, 205);
+}
+
+.back_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back_btn b {
+  display: none;
+}
+
+/* Main Feed */
+
+.main_info {
+  margin: 1.25rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  display: flex;
+  margin: 0.625rem 0;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Sign Up */
+.signup {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+form {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+#email,
+#fullname,
+#pass {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.signup div {
+  margin: 20px 0;
+}
+
+.signup h3 {
+  width: 75%;
+}
+.check_field {
+  display: flex;
+  gap: 5px;
+}
+
+.check_field input {
+  margin: 3px;
+}
+
+.check_field label {
+  font-weight: normal;
+}
+
+.terms {
+  color: #6e3ec1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#btn {
+  background-color: #6e3ec1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .back_btn b {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .main_content {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .main_info {
+    align-self: center;
+    font-size: 1.2rem;
+    margin-left: 50px;
+  }
+
+  .main_info h1 {
+    width: 55%;
+  }
+
+  .main_info li p {
+    width: 50%;
+    text-align: justify;
+  }
+}
